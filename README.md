@@ -1,7 +1,7 @@
 # TTL-TEST
 run project : yarn start:dev
 # Note: 
-If you want to test Friendly football match, your input is an array of numbers, where each element will be the number of goals scored by each team
+If you want to test Friendly Football Match, your input is an array of numbers, where each element will be the number of goals scored by each team
  example input : {
   "numberOfTestCases": 5,
   "testCase": [1,2,3,1,4,1,2,3,1,2]
