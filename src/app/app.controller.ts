@@ -1,4 +1,4 @@
-import { Body, Controller, Get, Post } from '@nestjs/common';
+import { Body, Controller, Post } from '@nestjs/common';
 import { ApiTags } from '@nestjs/swagger';
 import { BalancedBracketDTO } from 'src/dtos/balancedBracket.dto';
 import { DiabloDTO } from 'src/dtos/diablo.dto';
@@ -9,11 +9,6 @@ import { AppService } from './app.service';
 @ApiTags('test-api')
 export class AppController {
   constructor(private readonly appService: AppService) {}
-
-  @Get()
-  getHello(): string {
-    return this.appService.getHello();
-  }
 
   @Post('play-diablo')
   playDiablo(@Body() input: DiabloDTO) {

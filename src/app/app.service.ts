@@ -8,10 +8,6 @@ import { FriendlyMatchDTO } from '../dtos/friendlyMatch.dto';
 
 @Injectable()
 export class AppService {
-  getHello(): string {
-    return 'Hello World!';
-  }
-
   diablo(payload: DiabloDTO) {
     const { m, k, c, d } = payload;
     let result: number = minGoldToPassLevel(m, d, k, c);
